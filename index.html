@@ -3,18 +3,25 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>My Website</title>
+    <title>My First Website</title>
 </head>
 
 <body>
+    <a href="#main-content">Skip to main content</a>
     <header>
         <h1>My Favorite Activities</h1>
         <p>I enjoy spending time <strong>outdoors</strong> and <em>learning new things</em>.</p>
-    <p><a href="#hobbies">Read about my hobbies</a></p>
-    <p><a href="#sports">Read about my favorite sports</a></p>
+        <nav aria-label="Primary Navigation">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <article id="hobbies">
             <h2>Reading</h2>
             <p>I love to read books in my free time. Here are some of my favorite genres:</p>
@@ -27,6 +34,7 @@
 
         <article id="sports">
             <h2>Sports</h2>
+            <img src="images/decorative.png" alt="" width="600" height="100">
             <p>I enjoy playing various sports. Here are some of my favorites:</p>
             <h3>Favorite Sports</h3>
             <h4>Soccer</h4>
@@ -36,10 +44,20 @@
                 <p>Kickboxing is a great way to stay fit and learn self-defense.</p>
             </aside>
         </article>
+        <figure>
+            <img src="images/mountainSunrise.jpg" alt="Sun rising behind snow-covered mountains with orange and pink sky"
+                width="600" height="400">
+            <figcaption>Sunrise over the mountains</figcaption>
+        </figure>
     </main>
 
     <footer>
-        <a href="about.html" target="_blank">Visit my About page</a>
+        <nav aria-label="Footer">
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+        </nav>
         <p>&copy; 2024 My Website</p>
     </footer>
 </body>
