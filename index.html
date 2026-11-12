@@ -22,6 +22,19 @@
     </header>
 
     <main id="main-content">
+        <form action="/contact" method="post">
+            <input type="text" name="full_name">
+            <label for="email_address">Email Address:</label>
+            <input type="email" name="email_address" placeholder="example@xxx.com">
+            <input type="text" name="subject">
+            <button type="submit">Send Message</button>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10">
+
+            <label for="eventDate">Event Date:</label>
+            <input type="date" id="eventDate" name="eventDate">
+        </form>
         <article id="hobbies">
             <h2>Reading</h2>
             <p>I love to read books in my free time. Here are some of my favorite genres:</p>
