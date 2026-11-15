@@ -3,75 +3,107 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>My First Website</title>
+    <meta name="description" content="Discover fresh bread, pastries, and cakes at North Star Bakery.">
+    <title>Home | North Star Bakery</title>
 </head>
 
 <body>
-    <a href="#main-content">Skip to main content</a>
     <header>
-        <h1>My Favorite Activities</h1>
-        <p>I enjoy spending time <strong>outdoors</strong> and <em>learning new things</em>.</p>
-        <nav aria-label="Primary Navigation">
+        <a href="index.html">
+            <img src="images/bakery-logo_c.png" alt="North Star Bakery logo" width="180">
+        </a>
+
+        <nav aria-label="Main navigation">
             <ul>
                 <li><a href="index.html" aria-current="page">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact & Pre-Orders</a></li>
             </ul>
         </nav>
     </header>
 
-    <main id="main-content">
-        <form action="/contact" method="post">
-            <input type="text" name="full_name">
-            <label for="email_address">Email Address:</label>
-            <input type="email" name="email_address" placeholder="example@xxx.com">
-            <input type="text" name="subject">
-            <button type="submit">Send Message</button>
+    <main>
+        <h1>Welcome to North Star Bakery</h1>
 
-            <label for="quantity">Quantity:</label>
-            <input type="number" id="quantity" name="quantity" min="1" max="10">
+        <section>
+            <h2>Freshly Baked, Made with Care</h2>
+            <p>
+                At North Star Bakery, we believe that great bread
+                brings people together. <br /> We offer freshly baked
+                bread, delicious pastries, and handmade cakes
+                for our local community.
+            </p>
 
-            <label for="eventDate">Event Date:</label>
-            <input type="date" id="eventDate" name="eventDate">
-        </form>
-        <article id="hobbies">
-            <h2>Reading</h2>
-            <p>I love to read books in my free time. Here are some of my favorite genres:</p>
-            <h3>Genres</h3>
-            <h4>Fiction</h4>
-            <h4>Self-Development</h4>
-            <h5>Recommended Books</h5>
-            <h6>The Magic of Thinking Big</h6>
-        </article>
+            <img src="images/bakery-storefront_c.png" alt="Exterior of North Star Bakery's neighborhood storefront"
+                width="600">
+        </section>
 
-        <article id="sports">
-            <h2>Sports</h2>
-            <img src="images/decorative.png" alt="" width="600" height="100">
-            <p>I enjoy playing various sports. Here are some of my favorites:</p>
-            <h3>Favorite Sports</h3>
-            <h4>Soccer</h4>
-            <h4>Kick Boxing</h4>
-            <aside>
-                <h3>Training Tips</h3>
-                <p>Kickboxing is a great way to stay fit and learn self-defense.</p>
-            </aside>
-        </article>
-        <figure>
-            <img src="images/mountainSunrise.jpg" alt="Sun rising behind snow-covered mountains with orange and pink sky"
-                width="600" height="400">
-            <figcaption>Sunrise over the mountains</figcaption>
-        </figure>
+        <section>
+            <h2>What We're Known For</h2>
+            <ul>
+                <li>Freshly baked artisan bread</li>
+                <li>Handmade pastries</li>
+                <li>Custom cakes for special occasions</li>
+                <li>Friendly neighborhood service</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Featured Item of the Week</h2>
+            <h3>Our Signature Sourdough Loaf</h3>
+
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/bakery-feature-small_c.png">
+                <img src="images/bakery-feature-large_c.png" alt="Featured artisan bread from North Star Bakery"
+                    width="800">
+            </picture>
+
+            <p>
+                Discover our signature sourdough loaf, made
+                using traditional baking techniques.<br />
+                It is a perfect choice for breakfast,
+                sandwiches, or sharing with family.
+            </p>
+
+            <p>
+                <a href="products.html">Explore Our Products</a>
+            </p>
+        </section>
+
+        <section>
+            <h2>Hours and Location</h2>
+            <p>
+                Monday-Friday: 7:00 AM - 6:00 PM<br>
+                Saturday-Sunday: 8:00 AM - 4:00 PM
+            </p>
+            <p>
+                Location: 123 Main Street, Hometown, USA
+            </p>
+            <p>
+                <a href="contact.html">Contact Us</a>
+            </p>
+        </section>
+
+        <section>
+            <h2>A Welcome Message</h2>
+            <p>Listen to a short welcome message from our bakery.</p>
+
+            <audio controls>
+                <source src="media/bakery-welcome_c.mp3" type="audio/mpeg">
+                Your browser does not support audio playback.
+                <a href="media/bakery-welcome_c.mp3">
+                    Download the welcome audio.
+                </a>
+            </audio>
+        </section>
     </main>
 
     <footer>
-        <nav aria-label="Footer">
-            <ul>
-                <li><a href="privacy.html">Privacy Policy</a></li>
-                <li><a href="terms.html">Terms of Service</a></li>
-            </ul>
-        </nav>
-        <p>&copy; 2024 My Website</p>
+        <p>&copy; 2026 North Star Bakery. All rights reserved.</p>
+        <p>
+            <a href="contact.html">Contact & Pre-Orders</a>
+        </p>
     </footer>
 </body>
 
