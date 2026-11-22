@@ -1,0 +1,15 @@
+input:required {
+    border-color: #3498db;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input[type="checkbox"]:checked {
+    outline: 2px solid #3498db;
+}

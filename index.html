@@ -4,24 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <title>My First Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    
     <a href="#main-content">Skip to main content</a>
     <header>
-        <h1>My Favorite Activities</h1>
+        <h1 id="page-title">My Favorite Activities</h1>
         <p>I enjoy spending time <strong>outdoors</strong> and <em>learning new things</em>.</p>
         <nav aria-label="Primary Navigation">
             <ul>
-                <li><a href="index.html" aria-current="page">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="index.html" aria-current="page" class="button-link">Home</a></li>
+                <li><a href="about.html" class="button-link">About</a></li>
+                <li><a href="projects.html" class="button-link">Projects</a></li>
+                <li><a href="contact.html" class="button-link">Contact Us</a></li>
+                <li><a href="lesson_demo.html" class="button-link">Lesson Demo</a></li>
             </ul>
         </nav>
     </header>
 
     <main id="main-content">
+        <p>Welcome to my website!</p>
+        <div class="border-demo">Border example</div>
+<div class="content-sizing">Content-box</div> 
+<div class="border-sizing">Border-box</div>
+
+        <p class="highlight">Here you can learn more about my hobbies, sports, and other interests.</p>
         <form action="/contact" method="post">
             <input type="text" name="full_name">
             <label for="email_address">Email Address:</label>
