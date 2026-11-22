@@ -1,0 +1,353 @@
+:root {
+    --cream: #fff8f0;
+    --brown: #6b3e26;
+    --peach: #d88c5a;
+    --charcoal: #2f2a26;
+    --gutter: clamp(1rem, 4vw, 3rem);
+    --page-inset: max(var(--gutter), calc((100% - 70rem) / 2));
+    --gap: clamp(1.5rem, 4vw, 3rem);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--charcoal);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header, footer, main {
+    padding-inline: var(--page-inset);
+}
+
+header, footer, nav ul, .columns, .welcome, .feature, .contact-layout {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    align-items: center;
+    gap: 0.75rem;
+    padding-block: 0.75rem;
+    border-block-start: 0.3rem solid var(--brown);
+    border-block-end: 1px solid var(--peach);
+}
+
+header img {
+    width: 6rem;
+    mix-blend-mode: multiply;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    flex: 1 1 45%;
+}
+
+a {
+    color: var(--brown);
+    text-underline-offset: 0.2em;
+}
+
+a:hover {
+    text-decoration-thickness: 0.15em;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.75rem;
+    height: 100%;
+    padding: 0.4rem 0.25rem;
+    border-radius: 0.3rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover, nav a[aria-current="page"] {
+    background: var(--brown);
+    color: var(--cream);
+}
+
+nav a[aria-current="page"] {
+    text-decoration: underline;
+}
+
+:focus-visible {
+    outline: 3px solid var(--brown);
+    outline-offset: 3px;
+}
+
+main {
+    padding-block: clamp(2rem, 5vw, 4.5rem);
+}
+
+main > * + *, .visit-details > section + section {
+    margin-block-start: var(--gap);
+}
+
+h1, h2, h3 {
+    margin: 0;
+    color: var(--brown);
+    font-family: Georgia, serif;
+    line-height: 1.15;
+    text-wrap: balance;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 5.6vw, 4.75rem);
+    letter-spacing: -0.035em;
+}
+
+h2 {
+    font-size: clamp(1.65rem, 3vw, 2.4rem);
+}
+
+h3 {
+    font-size: 1.35rem;
+}
+
+p, figure, ul {
+    margin: 0;
+}
+
+p {
+    max-width: 65ch;
+}
+
+ul {
+    padding-inline-start: 1.4em;
+}
+
+section > * + *, .feature > div > * + *, fieldset > p + p {
+    margin-block-start: 0.9rem;
+}
+
+img, picture, video, audio {
+    display: block;
+    max-width: 100%;
+}
+
+img, video {
+    height: auto;
+}
+
+main img, video {
+    border-radius: 0.45rem;
+}
+
+figcaption, small {
+    font-size: 0.9rem;
+}
+
+figcaption {
+    margin-block-start: 0.65rem;
+    font-style: italic;
+}
+
+.columns, .contact-layout, .welcome, .feature {
+    gap: var(--gap);
+}
+
+.columns > *, .welcome > *, .feature > *, .contact-layout > * {
+    min-width: 0;
+    margin-block-start: 0;
+}
+
+.columns > section, .visit-details > section {
+    border-top: 2px solid var(--peach);
+    padding-block-start: 1.25rem;
+}
+
+.welcome section {
+    margin-block-start: 1.25rem;
+}
+
+.welcome h2 {
+    font-size: clamp(1.35rem, 2.3vw, 1.8rem);
+    font-weight: normal;
+}
+
+.specialties, .visit-details {
+    padding: clamp(1.25rem, 3vw, 2.5rem);
+    background: var(--brown);
+    border-radius: 0.45rem;
+    color: var(--cream);
+}
+
+.specialties h2, .visit-details h2 {
+    color: var(--cream);
+}
+
+.specialties li::marker, .visit-details li::marker {
+    color: var(--peach);
+}
+
+.button-link, button {
+    display: inline-block;
+    border: 2px solid var(--brown);
+    border-radius: 0.3rem;
+    padding: 0.65rem 1rem;
+    background: var(--brown);
+    color: var(--cream);
+    font: inherit;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    background: var(--cream);
+    color: var(--brown);
+}
+
+.button-link:hover, button:hover {
+    background: var(--peach);
+    color: var(--charcoal);
+}
+
+form, form > p {
+    display: flex;
+    gap: 1rem;
+}
+
+form {
+    flex-direction: column;
+}
+
+form > p {
+    flex-wrap: wrap;
+}
+
+fieldset {
+    min-width: 0;
+    margin: 0;
+    border: 1px solid var(--brown);
+    border-radius: 0.45rem;
+    padding: clamp(0.85rem, 2vw, 1.5rem);
+}
+
+legend, label {
+    font-weight: bold;
+}
+
+legend {
+    padding-inline: 0.4rem;
+    color: var(--brown);
+}
+
+label, fieldset small {
+    display: block;
+}
+
+input, select, textarea {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    margin-block: 0.3rem;
+    padding: 0.55rem;
+    border: 1px solid var(--brown);
+    border-radius: 0.25rem;
+    background: var(--cream);
+    color: var(--charcoal);
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+address {
+    font-style: normal;
+}
+
+footer {
+    gap: 0.75rem;
+    background: var(--charcoal);
+    color: var(--cream);
+    padding-block: 1.5rem;
+}
+
+footer a {
+    color: var(--cream);
+}
+
+footer :focus-visible {
+    outline-color: var(--peach);
+}
+
+@media (min-width: 48rem) {
+    header, footer, .welcome, .feature, .contact-layout {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        width: auto;
+    }
+
+    nav li {
+        flex: 0 1 auto;
+    }
+
+    nav a {
+        padding-inline: 1rem;
+    }
+
+    .welcome > div, .feature > div {
+        flex: 1;
+    }
+
+    .welcome > img, .feature > picture {
+        width: 51%;
+    }
+
+    .specialties ul {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 2rem;
+        row-gap: 0.5rem;
+    }
+
+    .columns {
+        flex-flow: row wrap;
+    }
+
+    .columns > section {
+        flex: 1 1 calc((100% - var(--gap)) / 2);
+    }
+
+    .columns > h1, .columns > p, .columns > .full-width {
+        flex-basis: 100%;
+    }
+
+    .contact-layout {
+        align-items: flex-start;
+    }
+
+    .contact-layout > section {
+        flex: 3;
+    }
+
+    .visit-details {
+        flex: 2;
+    }
+}

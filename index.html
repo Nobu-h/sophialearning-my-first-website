@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
     <meta name="description" content="Discover fresh bread, pastries, and cakes at North Star Bakery.">
     <title>Home | North Star Bakery</title>
 </head>
@@ -24,22 +26,25 @@
     </header>
 
     <main>
-        <h1>Welcome to North Star Bakery</h1>
+        <div class="welcome">
+            <div>
+                <h1>Welcome to North Star Bakery</h1>
 
-        <section>
-            <h2>Freshly Baked, Made with Care</h2>
-            <p>
-                At North Star Bakery, we believe that great bread
-                brings people together. <br /> We offer freshly baked
-                bread, delicious pastries, and handmade cakes
-                for our local community.
-            </p>
-
+                <section>
+                    <h2>Freshly Baked, Made with Care</h2>
+                    <p>
+                        At North Star Bakery, we believe that great bread
+                        brings people together. <br /> We offer freshly baked
+                        bread, delicious pastries, and handmade cakes
+                        for our local community.
+                    </p>
+                </section>
+            </div>
             <img src="images/bakery-storefront_c.png" alt="Exterior of North Star Bakery's neighborhood storefront"
                 width="600">
-        </section>
+        </div>
 
-        <section>
+        <section class="specialties">
             <h2>What We're Known For</h2>
             <ul>
                 <li>Freshly baked artisan bread</li>
@@ -49,54 +54,56 @@
             </ul>
         </section>
 
-        <section>
-            <h2>Featured Item of the Week</h2>
-            <h3>Our Signature Sourdough Loaf</h3>
+        <section class="feature">
+            <div>
+                <h2>Featured Item of the Week</h2>
+                <h3>Our Signature Sourdough Loaf</h3>
+                <p>
+                    Discover our signature sourdough loaf, made
+                    using traditional baking techniques.<br />
+                    It is a perfect choice for breakfast,
+                    sandwiches, or sharing with family.
+                </p>
 
+                <p>
+                    <a class="button-link" href="products.html">Explore Our Products</a>
+                </p>
+            </div>
             <picture>
                 <source media="(max-width: 600px)" srcset="images/bakery-feature-small_c.png">
                 <img src="images/bakery-feature-large_c.png" alt="Featured artisan bread from North Star Bakery"
                     width="800">
             </picture>
-
-            <p>
-                Discover our signature sourdough loaf, made
-                using traditional baking techniques.<br />
-                It is a perfect choice for breakfast,
-                sandwiches, or sharing with family.
-            </p>
-
-            <p>
-                <a href="products.html">Explore Our Products</a>
-            </p>
         </section>
 
-        <section>
-            <h2>Hours and Location</h2>
-            <p>
-                Monday-Friday: 7:00 AM - 6:00 PM<br>
-                Saturday-Sunday: 8:00 AM - 4:00 PM
-            </p>
-            <p>
-                Location: 123 Main Street, Manhattan, New York, NY 10001
-            </p>
-            <p>
-                <a href="contact.html">Contact Us</a>
-            </p>
-        </section>
+        <div class="columns">
+            <section>
+                <h2>Hours and Location</h2>
+                <p>
+                    Monday-Friday: 7:00 AM - 6:00 PM<br>
+                    Saturday-Sunday: 8:00 AM - 4:00 PM
+                </p>
+                <p>
+                    Location: 123 Main Street, Manhattan, New York, NY 10001
+                </p>
+                <p>
+                    <a href="contact.html">Contact Us</a>
+                </p>
+            </section>
 
-        <section>
-            <h2>A Welcome Message</h2>
-            <p>Listen to a short welcome message from our bakery.</p>
+            <section>
+                <h2>A Welcome Message</h2>
+                <p>Listen to a short welcome message from our bakery.</p>
 
-            <audio controls>
-                <source src="media/bakery-welcome_c.mp3" type="audio/mpeg">
-                Your browser does not support audio playback.
-                <a href="media/bakery-welcome_c.mp3">
-                    Download the welcome audio.
-                </a>
-            </audio>
-        </section>
+                <audio controls>
+                    <source src="media/bakery-welcome_c.mp3" type="audio/mpeg">
+                    Your browser does not support audio playback.
+                    <a href="media/bakery-welcome_c.mp3">
+                        Download the welcome audio.
+                    </a>
+                </audio>
+            </section>
+        </div>
     </main>
 
     <footer>
