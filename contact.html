@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
     <meta name="description" content="Contact North Star Bakery or request a bakery pre-order.">
     <title>Contact & Pre-Orders | North Star Bakery</title>
 </head>
@@ -37,7 +38,7 @@
                 want to request a pre-order?
                 Complete the form below.
             </p>
-            <p>Fields marked with * are required.</p>
+            <p>Fields marked with * are required. This demo checks your request on this device.</p>
         </section>
 
         <div class="contact-layout">
@@ -131,13 +132,15 @@
                     </fieldset>
 
                     <p>
-                        <button type="submit">
-                            Submit Request
+                        <button type="submit" disabled>
+                            Check Demo Request
                         </button>
                         <button type="reset">
                             Clear Form
                         </button>
                     </p>
+                    <noscript>Enable JavaScript to check this demo request.</noscript>
+                    <div id="form-status" role="status"></div>
                 </form>
             </section>
 

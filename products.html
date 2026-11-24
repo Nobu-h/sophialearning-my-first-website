@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
     <meta name="description" content="Explore fresh bread, pastries, and handmade cakes at North Star Bakery.">
     <title>Products | North Star Bakery</title>
 </head>
@@ -36,6 +37,19 @@
             We prepare our products
             with care to bring fresh flavors to every occasion.
         </p>
+
+        <section id="bakery-assistant" class="full-width assistant" hidden>
+            <h2>Favorites &amp; Pre-Orders</h2>
+            <label for="product-choice">Choose a bakery item</label>
+            <select id="product-choice"></select>
+            <div class="assistant-actions">
+                <button id="favorite-toggle" type="button"></button>
+                <a id="product-order" href="contact.html">Pre-order this item</a>
+            </div>
+            <h3>Your favorites</h3>
+            <div id="favorite-list" aria-live="polite" aria-atomic="true"></div>
+            <small id="storage-status" role="status"></small>
+        </section>
 
         <section>
             <h2>Artisan Breads</h2>
